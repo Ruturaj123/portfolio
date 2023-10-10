@@ -1,37 +1,40 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFaceSmileWink, faFaceSmileBeam } from '@fortawesome/free-regular-svg-icons';
+import { faFaceSmileBeam } from '@fortawesome/free-regular-svg-icons';
+import { faCode, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import './CSS Files/about.css';
 
 function About() {
   const languages = [
-    'JavaScript',
-    'TypeScript',
-    'HTML/CSS',
-    'React',
-    'NodeJS',
-    'MongoDB',
-    'Github/Git',
-    'AWS',
-    'Tailwind',
-    'Bootstrap CSS',
     'Python',
     'Java',
-    'JQuery',
-    'SQL',
+    'Groovy',
+    'C/C++',
+    'HTML/CSS',
+    'JavaScript',
     'Django',
-    'Angular',
+    'NodeJS',
+    'Robot',
+    'PyTorch',
+    'Keras',
+    'Tensorflow'
   ];
 
-  const learning = [
-    'Svelte',
-    'Android / IOS Development',
-    'Machine Learning',
-    'ThreeJS',
-    'Tensor Flow',
-    'Framer Motion',
-    'Motion One',
+  const databases = [
+    'SQL',
+    'MongoDB',
+    'Elastic Search',
+    'AWS',
   ];
+
+  const tools = [
+    'Git',
+    'Docker',
+    'Kubernetes',
+    'AWS',
+    'Jenkins'
+  ]
+
 
   return (
     <section className='about-section' id='About'>
@@ -56,19 +59,27 @@ function About() {
         <div className='right-section'>
           <div className='tools'>
             <h1>
-              <FontAwesomeIcon icon={faFaceSmileWink} style={{ color: '#ff005a' }} />{' '}
-              Languages/Frameworks
+            <FontAwesomeIcon icon={faCode} style={{ color: '#ff005a' }}  /> {' '} 
+            Languages / Frameworks
             </h1>
             {languages.map((language, index) => (
               <span key={index}>{language}</span>
             ))}
             <br />
             <h1>
-              <FontAwesomeIcon icon={faFaceSmileBeam} style={{ color: '#ff005a' }}  /> {' '} 
-               Learning
+            <FontAwesomeIcon icon={faCode} style={{ color: '#ff005a' }}  /> {' '} 
+            Databases
             </h1>
-            {learning.map((item, index) => (
-              <span key={index}>{item}</span>
+            {databases.map((db, index) => (
+              <span key={index}>{db}</span>
+            ))}
+            <br />
+            <h1>
+              <FontAwesomeIcon icon={faScrewdriverWrench} style={{ color: '#ff005a' }}  /> {' '} 
+               Tools
+            </h1>
+            {tools.map((tool, index) => (
+              <span key={index}>{tool}</span>
             ))}
           </div>
         </div>

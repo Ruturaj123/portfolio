@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import "./CSS Files/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
 import { animateScroll as scroll } from "react-scroll";
-import Pdf from "./Images/AkshayVakilResume.pdf";
+import Pdf from "./Images/resume.pdf";
 
 function Navbar() {
   const typewriterRef = useRef(null);
@@ -13,9 +13,9 @@ function Navbar() {
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
       strings: [
-        "I am a Computer Science Student",
-        "I like coding",
-        "I enjoy watching shows",
+        "I am a Software Engineer",
+        // "I like coding",
+        "I like to sketch",
         "Keep scrolling!",
       ],
       autoStart: true,
@@ -72,14 +72,13 @@ function Navbar() {
         </Link>
       </ul>
       <div className="Introduction">
-        <h1>Hey, I'm Akshay</h1>
+        <h1>Hi, I'm Ruturaj</h1>
         <h2>
           <span ref={typewriterRef}></span>
         </h2>
         <p>
-          I'm currently a Full Stack Developer seeking many ways to improve my
-          skills through problem-solving and creating various projects! Scroll
-          down to learn more about me.
+          I'm a Software Engineer with interests in Machine Learning and backend infrastructure. I love playing
+          around with new technologies. Scroll down to learn more about me!
         </p>
         <Link to="Contact"  smooth={true} duration={900}>
           <button>Contact Me</button>
