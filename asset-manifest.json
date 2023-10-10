@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/assets/index-e85c4878.js",
-    "index.html": "/index.html"
+    "main.js": "/portfolio/assets/index-e85c4878.js",
+    "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "assets/index-e85c4878.js"
+    "portfolio/assets/index-e85c4878.js"
   ]
 }
