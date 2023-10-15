@@ -39,27 +39,27 @@ function About() {
   return (
     <section className='about-section' id='About'>
       <h1 className='about-title'>
-        About<span style={{ color: '#FF004F' }}>.</span>
+        About<span className="period">.</span>
       </h1>
       <div className='section-divider'></div>
       <div className='content-wrapper'>
         <div className='about-text'>
           <p>
-            Hey there! I'm a passionate web developer with a versatile skill set, specializing primarily in full-stack development. I possess a deep understanding of both front-end and back-end development and am constantly refining my abilities while seeking opportunities for growth in both domains.
+          I'm a Backend Software Engineer with a passion for building modular, scalable, and resilient systems.
           </p>
           <br />
           <p>
-            Currently, I am actively seeking full-stack opportunities that encompass both front-end and back-end development. If you're interested, I'd be thrilled to connect and discuss potential collaborations. I am currently working on several projects that emphasize specific tech stacks and frameworks, allowing me to further enhance my expertise.
+          My interests span Machine Learning and backend infrastructure. Lately, I've been diving into technologies like Kubernetes and Terraform in my current role.
           </p>
           <br />
-          <p>In my personal life, I enjoy collecting various figures, spending time watching shows, and creating UI/UX designs, and working out. </p>
+          <p> Outside of work, I enjoy watching shows, working out, and occasionally sketching. </p>
           <br />
-          <p>Feel free to reach out if you would like to explore the potential of working together!</p>
+          <p>If you're interested in exploring collaboration opportunities, don't hesitate to reach out!</p>
         </div>
         <div className='right-section'>
           <div className='tools'>
             <h1>
-            <FontAwesomeIcon icon={faCode} style={{ color: '#ff005a' }}  /> {' '} 
+            <FontAwesomeIcon icon={faCode} className="period"  /> {' '} 
             Languages / Frameworks
             </h1>
             {languages.map((language, index) => (
@@ -67,7 +67,7 @@ function About() {
             ))}
             <br />
             <h1>
-            <FontAwesomeIcon icon={faCode} style={{ color: '#ff005a' }}  /> {' '} 
+            <FontAwesomeIcon icon={faCode} className="period"  /> {' '} 
             Databases
             </h1>
             {databases.map((db, index) => (
@@ -75,7 +75,7 @@ function About() {
             ))}
             <br />
             <h1>
-              <FontAwesomeIcon icon={faScrewdriverWrench} style={{ color: '#ff005a' }}  /> {' '} 
+              <FontAwesomeIcon icon={faScrewdriverWrench} className="period"  /> {' '} 
                Tools
             </h1>
             {tools.map((tool, index) => (

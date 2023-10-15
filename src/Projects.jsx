@@ -1,12 +1,9 @@
 import React from 'react';
 import './CSS Files/projects.css';
 
-import medical from './Images/medical.png';
-import fault from './Images/FaultFinder.png';
-import calendar from './Images/Calendar.png';
-import tensor from './Images/TensorFlow.jpg';
-import discord from './Images/DiscordBot.png';
-import picture from './Images/Better.jpg';
+import sarkar from './Images/sarkar.png';
+import flowchart from './Images/flowchart.png';
+import queuing from './Images/queuing.png';
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +23,7 @@ function ProjectCard({ title, imageSrc, githubLink, technologies, description })
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
         </div>
-        <h3><span style={{ color: '#FF004F' }}>{technologies}</span></h3>
+        <h3><span className="period">{technologies}</span></h3>
         <p>{description}</p>
       </div>
     </div>
@@ -37,54 +34,31 @@ function Projects() {
   return (
     <div id='Projects'>
       <h1 className='title'>
-        My Projects <span style={{ color: '#FF004F' }}>.</span>{' '}
+        My Projects <span className="period">.</span>{' '}
       </h1>
       <div className='projects-wrapper'>
         <ProjectCard
-          title="Health Policy Student Association"
-          imageSrc={medical}
-          githubLink="https://github.com/ChrisMikhail/hpsa-website"
-          technologies="HTML CSS JavaScript JQuery"
-          description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms. Website url/link is posted in the READ ME."
+          title="Hackathon - SARKAR.AI"
+          imageSrc={sarkar}
+          githubLink="https://github.com/Ruturaj123/SARKAR.AI"
+          technologies="HTML CSS JavaScript Python Django"
+          description="A hackathon project that uses sentiment analysis to provide the current sentiment of any given topic on twitter. It also has a context-based Q&A bot which answers questions based on the provided context."
         />
 
         <ProjectCard
-          title="Hackathon Fault Finder"
-          imageSrc={fault}
-          githubLink="https://github.com/HNow/MetHacks2023Base"
-          technologies="NodeJS, Astro/React, HTML/CSS, JS/JSX, Python, OpenAI API, Figma"
-          description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions. It utilizes a backend database in Node.js to present users with these questions and solutions, allowing them to review and debug the provided code. The system then provides feedback on the accuracy of the debugging process."
+          title="Flowchart detection"
+          imageSrc={flowchart}
+          githubLink="https://github.com/Ruturaj123/Flowchart-Detection"
+          technologies="Python, Open-CV, Tensorflow"
+          description="This project aims to detect hand-drawn flowcharts using tensorflow. It detects each component in the flowchart and provides the co-ordinates for the same so that it can be used to digitize the flowchart."
         />
 
         <ProjectCard
-          title="React Calendar"
-          imageSrc={calendar}
-          githubLink="https://github.com/Octrainn/React-Calendar-App"
-          technologies="React JSX, GH-Pages, Vite, CSS"
-          description="React-Calendar is a feature-rich calendar component built using React. Leveraging the power of React, it offers several dynamic and interactive features to enhance the user experience."
-        />
-
-        <ProjectCard
-          title="Discord Bot Weaver"
-          imageSrc={discord}
-          githubLink="https://github.com/Octrainn/DiscordBot"
-          technologies="Python, OAuth 2.0, Spotify API"
-          description="Versatile Discord bot that utilizes the Spotify API to stream music, and it offers several other functionalities like moderation, chat restriction, image generation, and meme generation."
-        />
-
-        <ProjectCard
-          title="Tensor Flow Model"
-          imageSrc={tensor}
-          githubLink="https://github.com/Octrainn/TensorFlowModel"
-          technologies="Python, Juypter Notebook, Google Colab"
-          description="Mini-project that focuses on implementing a machine learning model to accurately differentiate between images of humans and animals, specifically distinguishing between dogs and cats. Additionally, the project leverages the computational capabilities of Google Colab to efficiently train the model and handle the image datasets effectively."
-        />
-        <ProjectCard
-          title="Static Portfolio "
-          imageSrc={picture}
-          githubLink="https://github.com/Octrainn/octrainn.github.io"
-          technologies="HTML, CSS, JavaScript, JQuery, Bootstrap CSS"
-          description="Experience my previous static portfolio designed to elegantly display my abilities and projects. Its responsive and dynamic layout ensures seamless viewing across various devices, including laptops, mobiles, and PCs. Website url/link is posted in the READ ME."
+          title="Queuing App"
+          imageSrc={queuing}
+          githubLink="https://github.com/Ruturaj123/QueueingApp"
+          technologies="Android, Java, XML"
+          description="This app simplifies the submission process by creating virtual queues, enabling teachers to schedule future submissions and notifying students. Students can join queues, stay informed about their position, and subscribe to teachers for real-time updates."
         />
       </div>
     </div>

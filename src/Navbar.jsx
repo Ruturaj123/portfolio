@@ -46,10 +46,10 @@ function Navbar() {
         </a>
       </div>
 
-      <a href="https://www.linkedin.com/in/akshay-vakil/" target="_blank" className="icons">
+      <a href="https://www.linkedin.com/in/ruturaj-gujar/" target="_blank" className="icons">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
-      <a href="https://github.com/Octrainn" target="_blank" className="icons">
+      <a href="https://github.com/Ruturaj123" target="_blank" className="icons">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
 
@@ -57,7 +57,7 @@ function Navbar() {
         <div className="name-box">
          
           <li className="Name">
-            A <span className="period">.</span>
+            R <span className="period">.</span>
           </li>
                 
         </div>
