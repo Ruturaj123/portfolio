@@ -15,6 +15,7 @@
   color: var(--textcolor);
 
   margin: 5rem auto;
+  margin-bottom: 10rem;
   grid-gap: 2rem;
   gap: 2rem;
 }

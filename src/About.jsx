@@ -41,7 +41,6 @@ function About() {
       <h1 className='about-title'>
         About<span className="period">.</span>
       </h1>
-      <div className='section-divider'></div>
       <div className='content-wrapper'>
         <div className='about-text'>
           <p>

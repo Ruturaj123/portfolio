@@ -52,15 +52,14 @@ function Navbar() {
       <a href="https://github.com/Ruturaj123" target="_blank" className="icons">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
-
       <ul className="nav-links">
-        <div className="name-box">
+      <div className="name-box">
          
-          <li className="Name">
-            R <span className="period">.</span>
-          </li>
-                
-        </div>
+         <li className="Name">
+           R <span className="period">.</span>
+         </li>
+               
+       </div>
         <Link to="About" smooth={true} duration={500}>
           <li>About</li>
         </Link>

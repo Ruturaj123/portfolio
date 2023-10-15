@@ -36,6 +36,7 @@ function Projects() {
       <h1 className='title'>
         My Projects <span className="period">.</span>{' '}
       </h1>
+      {/* <div className='section-divider'></div> */}
       <div className='projects-wrapper'>
         <ProjectCard
           title="Hackathon - SARKAR.AI"

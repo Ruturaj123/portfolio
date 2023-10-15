@@ -1,6 +1,7 @@
 .contact-wrap {
   max-width: 1500px;
-  margin: 7rem auto;
+  margin: auto;
+  margin-top: 10rem;
 }
 
 .content {
@@ -13,6 +14,7 @@
 }
 .content p {
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 .email {
   font-size: 2rem;
